@@ -1,3 +1,17 @@
+.banner-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .list-group-item {
     transition: background-color 0.2s;
 }
@@ -29,6 +43,10 @@
 }
 
 @media (max-width: 576px) {
+    .banner-container {
+        height: 150px;
+    }
+    
     .container {
         padding: 0 10px;
     }
